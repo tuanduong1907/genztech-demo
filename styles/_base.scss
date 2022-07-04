@@ -1,0 +1,97 @@
+body::-webkit-scrollbar {
+  width: 1em;
+  display: none;
+}
+
+body::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  @include text16;
+  background-color: #061121;
+  color: #cbd5e1;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1310px;
+  width: 100%;
+  margin-inline: auto;
+  padding-inline: 20px;
+}
+
+.wrapper {
+  max-width: 2400px;
+  width: 100%;
+  margin-inline: auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 200px;
+}
+
+.distance-header {
+  margin-top: 100px;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.absolute {
+  position: absolute !important;
+}
+
+.relative {
+  position: relative !important;
+}
+
+.text-center {
+  text-align: center !important;
+}
+
+// Color
+.bg-pink {
+  background-color: #ed1e79;
+}
+
+.bg-green {
+  background-color: #0cba83;
+}
+
+.bg-blue {
+  background-color: #29abe2;
+}
+
+.fadeBottom {
+  position: relative;
+  top: 0;
+  animation: fadeBottom linear 0.5s;
+}
+
+.text-primary {
+  color: #0a84ff;
+}
+
+.text-purple {
+  color: rgb(192 38 211);
+}
+.bg-tranparent {
+  background-color: transparent !important;
+}
+// end Color
+
+/* Mobile & tablet: width <1024px */
+@media only screen and (max-width: 1023px) {
+  .content {
+    gap: 120px;
+  }
+}
